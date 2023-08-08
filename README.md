@@ -50,11 +50,14 @@ GUI.py is the code related to the graphic user interface for which we've used th
 8. auto-py-to-exe (to convert .py file to .exe)
 
 skin.py is the file in which all the calculations are done in the form of Object Oriented Programming. A class is built named Skin
-inside which there are multiple functions each of which refer to the calculation of a specific sort of skin.
+inside which there are multiple functions each of which refers to the calculation of a specific sort of skin.
 
 we have used this class in the GUI.py in the form of a library with the code below:
 
 >> from skin import *
+
+we have also used numpy and sqlite packages. instead of saving the constants we've added them in the form of a table using sqlite.
+the perforation skin constants image is shown in the calculation section below
 
 ## Calcuations
 

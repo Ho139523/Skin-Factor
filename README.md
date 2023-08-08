@@ -33,6 +33,21 @@ Here is an overview of the result page where you can see the total skin factor:
 ![Screenshot 2023-08-09 000912](https://github.com/Ho139523/Skin-Factor/assets/99872823/1b78b09a-61c1-42be-b1c9-da719ec4ff6a)
 
 
+## Files and Directories
+
+the project final .exe file is in the main root. while the codes are embedded in the skin_factor folder inside which you can
+see statics folder GUI.py and skin.py. The statics folder is for all images, music,s or database files that are being used in the coding files.
+GUI.py is the code related to the graphic user interface for which we've used the following libraries:
+
+1. tkinter (design of  the app)
+2. time (to do some actions with a delay of time)
+3. pillow (to show images on the screen)
+4. ttkbootstrap (for more advanced design)
+5. pygame (to add music)
+6. os and sys (to access static file directory not only from my local device but all devices that have .exe files)
+7. pyautogui (to set the desired size for the app for different monitor display sizes)
+8. auto-py-to-exe (to convert .py file to .exe)
+
 ## Calcuations
 
 In Order to find the near wellbore pressure from the well-flowing rate or vice versa, petroleum engineers use Darcy equation 

@@ -37,6 +37,7 @@ Here is an overview of the result page where you can see the total skin factor:
 
 the project final .exe file is in the main root. while the codes are embedded in the skin_factor folder inside which you can
 see statics folder GUI.py and skin.py. The statics folder is for all images, music,s or database files that are being used in the coding files.
+
 GUI.py is the code related to the graphic user interface for which we've used the following libraries:
 
 1. tkinter (design of  the app)
@@ -47,6 +48,13 @@ GUI.py is the code related to the graphic user interface for which we've used th
 6. os and sys (to access static file directory not only from my local device but all devices that have .exe files)
 7. pyautogui (to set the desired size for the app for different monitor display sizes)
 8. auto-py-to-exe (to convert .py file to .exe)
+
+skin.py is the file in which all the calculations are done in the form of Object Oriented Programming. A class is built named Skin
+inside which there are multiple functions each of which refer to the calculation of a specific sort of skin.
+
+we have used this class in the GUI.py in the form of a library with the code below:
+
+>> from skin import *
 
 ## Calcuations
 

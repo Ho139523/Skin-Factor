@@ -25,7 +25,7 @@ app.title('Skin Analysis')
 if screen == (1920, 1080):
     app.geometry('750x1001+200+0')
 app.resizable(False, True)
-app.iconbitmap(resource_path("logo.ico"))
+app.iconbitmap(resource_path("statics\logo.ico"))
 
 
 #variables
@@ -37,27 +37,27 @@ play_pause_var.set(1)
 
 # Images
 
-muskat_top_image=Image.open(resource_path('muskat_top.png')).resize((300, 250))
+muskat_top_image=Image.open(resource_path('statics\\muskat_top.png')).resize((300, 250))
 muskat_top_image=ImageTk.PhotoImage(muskat_top_image)
-muskat_middle_image=Image.open(resource_path('muskat_middle.png')).resize((300, 250))
+muskat_middle_image=Image.open(resource_path('statics\\muskat_middle.png')).resize((300, 250))
 muskat_middle_image=ImageTk.PhotoImage(muskat_middle_image)
-furui_image=Image.open(resource_path('furui.png')).resize((300, 250))
+furui_image=Image.open(resource_path('statics\\furui.png')).resize((300, 250))
 furui_image=ImageTk.PhotoImage(furui_image)
-golan_image=Image.open(resource_path('golan.png')).resize((300, 250))
+golan_image=Image.open(resource_path('statics\\golan.png')).resize((300, 250))
 golan_image=ImageTk.PhotoImage(golan_image)
-odeh_image=Image.open(resource_path('odeh.png')).resize((300, 250))
+odeh_image=Image.open(resource_path('statics\\odeh.png')).resize((300, 250))
 odeh_image=ImageTk.PhotoImage(odeh_image)
-papatzacos_image=Image.open(resource_path('papatzacos.png')).resize((300, 250))
+papatzacos_image=Image.open(resource_path('statics\\papatzacos.png')).resize((300, 250))
 papatzacos_image=ImageTk.PhotoImage(papatzacos_image)
-perforation_image=Image.open(resource_path('perforation.png')).resize((300, 250))
+perforation_image=Image.open(resource_path('statics\\perforation.png')).resize((300, 250))
 perforation_image=ImageTk.PhotoImage(perforation_image)
-slanted_image=Image.open(resource_path('slanted.png')).resize((300, 250))
+slanted_image=Image.open(resource_path('statics\\slanted.png')).resize((300, 250))
 slanted_image=ImageTk.PhotoImage(slanted_image)
-plus_image=Image.open(resource_path('plus.png')).resize((20, 20))
+plus_image=Image.open(resource_path('statics\\plus.png')).resize((20, 20))
 plus_image=ImageTk.PhotoImage(plus_image)
-uni_image=Image.open(resource_path('logo_en.png')).resize((200, 200))
+uni_image=Image.open(resource_path('statics\\logo_en.png')).resize((200, 200))
 uni_image=ImageTk.PhotoImage(uni_image)
-play_image=Image.open(resource_path('play.png')).resize((40, 40))
+play_image=Image.open(resource_path('statics\\play.png')).resize((40, 40))
 play_image=ImageTk.PhotoImage(play_image)
 
 
@@ -108,9 +108,9 @@ count=0
 
 circle=list(range((len(Skin(2).all_skins))))
 
-empty_circle=(Image.open(resource_path('empty_circle.png'))).resize((15,15))
+empty_circle=(Image.open(resource_path('statics\\empty_circle.png'))).resize((15,15))
 empty_circle=ImageTk.PhotoImage(empty_circle)
-solid_circle=(Image.open(resource_path('solid_circle.png'))).resize((18, 15))
+solid_circle=(Image.open(resource_path('statics\\solid_circle.png'))).resize((18, 15))
 solid_circle=ImageTk.PhotoImage(solid_circle)
 
 
@@ -1415,7 +1415,7 @@ def play(event=None):
 #objects
 
 pygame.mixer.init()
-pygame.mixer.music.load(resource_path('music.mp3'))
+pygame.mixer.music.load(resource_path('statics\\music.mp3'))
 pygame.mixer.music.play(loops=1)
 
 frame1=LabelFrame(app, text='Perforation Skin', width=720, height=970)
